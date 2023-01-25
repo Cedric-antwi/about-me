@@ -27,12 +27,14 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:image" content="about-me/OG_image.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ecc3b16a82.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="parent">
         <div class="img-container"> 
-            <img src="https://media-exp1.licdn.com/dms/image/D4E03AQFxHktk7Tt1Iw/profile-displayphoto-shrink_800_800/0/1666115499893?e=1674086400&v=beta&t=3CwoYGYa7kzBdEGuVfwjsgP6T2E8flENx8IBsS1QG9w">
+            <img src="/about-me/Image.jpeg">
             <h1>Cedric Antwi</h1>
         </div>
         <div class="about-me">
@@ -52,8 +54,27 @@
                     <li><a href="https://github.com/c13codes">Github</a></li>
                 </ul>
         </div>
+        <div class="blog-container">
+            <h3>Blog:</h3>
+            <div class="blog-section">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta dignissimos aliquam tempora culpa odit deserunt molestiae repudiandae autem incidunt? Cumque ratione magnam molestiae reprehenderit temporibus culpa odio distinctio vel.
+
+                <ul id="interests">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Software development</li>
+                    <li>Tech</li>
+                </ul>
+            </div>
+            <button id="favourite" onclick="toggleFavouriteBtn()">Favourite <i class="fa-regular fa-heart"></i></button>
+            <div class="post-section">
+                <textarea id="input-display" cols="30" rows="10"></textarea>
+                <button id="post" onclick="postToUser()">Post</button>
+            </div>
+        </div>
         </div>
     
 </body>
-<script></script>
+<script src="script.js"></script>
 </html>
